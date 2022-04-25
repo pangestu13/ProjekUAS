@@ -5,17 +5,18 @@
     <title>Login Form</title>
     <style>
         body {
-            background-color: #3fb8ec ;
+            background-color: rgba(63, 184, 236, 0.42) ;
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .p a{
-            text-align: right;
-        }
-        .card {
-            margin-top: 100px;
-            border-radius: 15px;
-            border: none;
+        p {
+            position: sticky; 
+            text-align: right; 
+            padding-right: 30px;
+            padding-top: 10px;
+        } 
+        p a {
+            color: rgb(255, 255, 255); font-size: medium; font-family: sans-serif;
         }
         .logo {
             font-size: 30px;
@@ -28,25 +29,24 @@
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-lg-6">
-                <div class="card mb-5">
+                <div style="border-radius: 20px; margin-top: 100px; border: none;" class="card mb-5">
                     <div class="row">
                             <div class="card-body mx-4">
-                                <div class="text-center"><img src="image/logoNew.png" width="50px" alt="logo"
+                                <div class="text-center"><img style="box-shadow: 2px 2px 2px grey; border-radius: 30px;" src="/Frontend/Image/LogoDisPin.png" width="230px" alt="logo DisPin"
                                         class="justify my-3"></div>
-                                        <h1 class="fw-bold logo"><center><i>NR Store</i></center></h1>
+                                        
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="floatingInput"
                                         placeholder="name@example.com">
-                                    <label for="floatingInput">Email</label>
+                                    <label for="floatingInput">Username</label>
                                 </div>
                                 <div class="form-floating">
                                     <input type="password" class="form-control" id="floatingPassword"
                                         placeholder="Password">
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <a href="#" style="font-size: 12px;text-decoration: none;color: #252525;"
-                                    class="d-block my-3">Lupa
-                                    Password?</a>
+                                <a href="#" style="font-size: 12px;text-decoration: none;color: #007CC2;"
+                                    class="d-block my-3">Lupa Password?</a>
                                 <div class="d-grid col-12 mb-3"><button class="btn btn-primary">Login</button></div>
                             </div>
                         </div>
