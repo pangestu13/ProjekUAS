@@ -12,19 +12,14 @@
             margin: 0;
             font-family: sans-serif;
         }
-        .header{
+        .navbar{
             background-color: #2694D2;
         }
-        .header ul li{
-            margin-right: 25px;
-            display: inline-block;
-            font-family: Arial;
+        .navbar a{
+            font-size: 36px;
         }
-        .container{
-            width: 120%;
-            margin: 0px 50px;
-            margin-top: 0px;
-        }
+        /*  */
+        
         .body{
              margin: 60px;  
         }
@@ -38,14 +33,15 @@
     </style>
 </head>
 <body>
-<div class="header">
-    <div class="container">
-           <ul>
-        <li><img src="/Frontend/Image/help-web-button.png" width="50px"  alt="Ikon"></li>
-        <li><p style="color: #ffff; font-family: Arial, Helvetica, sans-serif; font-size: 35px;">Bantuan</p></li>
-    </ul>  
-    </div>  
-</div>
+    <nav class="navbar navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#" style="color: #fff; margin-left: 75px;">
+            <img src="Frontend/Image/help-web-button.png" alt="" width="40" class="d-inline-block align-text-top">
+            Bantuan
+          </a>
+          <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
+        </div>
+      </nav>
    
 <div class="body">
     <div class="conten">  
