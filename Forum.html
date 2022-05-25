@@ -6,54 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
     <style>
           
         
         *{
             padding: 0;
             margin: 0;
-            font-family: sans-serif;
+            font-family: 'Mirza', cursive;
+        }
+        
+        .header{
+            position:relative;
+            margin: 0;
+            background-color: aliceblue;
+
         }
          .header a{
             float: right;
-            margin: 10px;
+            margin-left: 10px;
          }
-          .header input{
+          .header form{
             float: right;
-            margin: 15px;
+            margin-left: 1100px;
+            margin-top: 12px;
+    
         }
+        /*navbar */
         .navbar{
             background-color: #2694D2;
         }
-        .navbar a{
-            font-size: 36px;
-        }
-     
-        .acount{
 
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 30px;
+            margin-top: 13px;
         }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+            font-size:16px;
+            border: 0px solid #2694D2;
+            padding: 25px;
+        }
+        .navbar ul li a:hover{
+            background-color: #174f6f;
+            color: black;
+        }
+        /* sidebar */
+        .sidebar {
+        margin-top: 0px;
+        padding: 0px;
+        width: 300px;
+        float: right;
+        background-color: #98d9ff;
+        position:relative;
+        height: 1500px;
+        overflow: hidden; 
+        
+        }
+
+        .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        }
+        
+        .sidebar a.active {
+        background-color: #174f6f;
+        color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+        background-color: #174f6f;
+        color: white;
+        }
+
+        .content {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 310px;
+        padding: 1px 160px;
+        height: auto;
+        }
+
+         @media screen and (max-width: 700px) {
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+        }
+
+        @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+        } 
+        .tanggapan{
+            background-color: #C4C4C4;
+            height: 800px;
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
         <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="" style=" margin-top: 15px; margin-left: 25px; margin-bottom: 15px;" >  
         <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/woman.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
-        <input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
+        <form><input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
       
     </div>
 
-
-    <nav class="navbar navbar-light ">
+    <!-- <nav class="navbar navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#" style="color: #fff; margin-left: 75px;">
-            <img src="Frontend/Image/settings.png" alt="" width="40" class="d-inline-block align-text-top">
-            Obrolan
-          </a>
-          <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
+            <ul>
+                <li><a href="#">Politik</a></li>
+                <li><a href="#">Pendidikan</a></li>
+                <li><a href="#">Olahraga</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Entertaiment</a></li>
+                <li><a href="#">Food & Travel</a></li>
+            </ul>
         </div>
       </nav>
      <div class="acount" style="background-color: #2694D2;">
+     </div> -->
 
-     </div>
+     <!-- SideBar -->
+     <div class="sidebar">
+         <p>Kategori</p>
+        <a class="active" href="#home">Politik</a>
+        <a href="#news">Pendidikan</a>
+        <a href="#contact">Olahraga</a>
+        <a href="#about">Entertaiment</a>
+        <a href="#about">Food & Travel</a>
+        <a href="#about">Game</a>
+        
+      </div>
+      
+      <div class="content">
+        <p style="text-align: center; font-size: 28px;">JUDUL</p>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="/Frontend/Image/politik.jpg" alt="">
+        <p style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sit, quasi minus fugit, nisi provident accusamus porro, quibusdam doloremque autem nostrum commodi veniam saepe sequi? Reiciendis quibusdam esse perferendis perspiciatis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum eos aspernatur quae soluta voluptatum voluptas veritatis error iure iste, officiis temporibus eum ullam iusto vero, magni necessitatibus laudantium officia quos.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora non molestias cupiditate nisi dolorem. Ratione perferendis voluptatem repudiandae? Rem aliquam unde nemo expedita. Aperiam, corporis blanditiis numquam molestias magnam voluptatem.</p>
+      </div>
+
+      <div class="tanggapan">
+
+      </div>
+      
 </body>
 </html>
