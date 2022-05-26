@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum</title>
+    <title>Kategori</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!--font google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+    ></script>
     <style>
           
         
@@ -37,7 +52,7 @@
     
         }
         /*navbar */
-        .navbar{
+        /* .navbar{
             background-color: #2694D2;
         }
 
@@ -56,7 +71,7 @@
         .navbar ul li a:hover{
             background-color: #174f6f;
             color: black;
-        }
+        } */
         /* sidebar */
         .sidebar {
         margin-top: 0px;
@@ -65,7 +80,7 @@
         float: right;
         background-color: #98d9ff;
         position:relative;
-        height: 600px;
+        height: 1000px;
         overflow: hidden; 
         
         }
@@ -116,52 +131,6 @@
             float: none;
         }
         } 
-
-        /* tangapan */
-        .container {
-        border: 2px solid #dedede;
-        background-color: #fff;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 10px 200px;
-        width: 800px
-        }
-
-        .darker {
-        border-color: #ccc;
-        background-color: #fff;
-        }
-
-        .container::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-
-        .container img {
-        float: left;
-        max-width: 60px;
-        width: 100%;
-        margin-right: 20px;
-        border-radius: 50%;
-        }
-
-        .container img.right {
-        float: right;
-        margin-left: 20px;
-        margin-right:0;
-        }
-
-        .time-right {
-        float: right;
-        color: #aaa;
-        }
-
-        .time-left {
-        float: left;
-        color: #999;
-        }
-
     </style>
 </head>
 <body>
@@ -196,67 +165,89 @@
         <a href="#about">Entertaiment</a>
         <a href="#about">Food & Travel</a>
         <a href="#about">Game</a>
-        
       </div>
       
-      <div class="content">
-        <p style="text-align: center; font-size: 28px; background-color: #ffff;">Bapak Jokowi Takut Mundur</p>
-        <img style="display: block; margin-left: auto; margin-right: auto;" src="/Frontend/Image/politik.jpg" alt="">
-        <p style="font-size: 16px; background-color: #ffff;">
-          Bapak Jokowi takut mundur sampai siapin pasukan bodrek 
-          untuk membunuh mahasiswa yang cuma berteriak "LENGSERKAN 
-          PRESIDEN TERBURUK INDONESIA". Mahasiswa sudah terlalu kecewa 
-          atas program yang tidak berjalan dengan semestinya.</p>
-      </div>
+      <!-- Card Kategori -->
+      <main>
+        <h3 style="text-align: center; padding: 30px 0px; font-size: 40px;">
+          Politik
+        </h3>
+  
+        <div class="card-deck mb-5" >
+          <div class="card" style="background-color: #5e6ec5;">
+            <div class="card-body">
+                <h5 class="card-title text-center" style="color: white;">Bapak Jokowi Takut Mundur</h5>
+                <img
+                  class="mx-auto"
+                  src="/Frontend/Image/politik.jpg"
+                  alt="Card image cap"
+                  style="width: 300px; display: block;
+                  border-radius: 10px;"
+                />
+                <p class="card-text mt-3" style="color: white;">
+                  Bapak Jokowi takut mundur sampai siapin pasukan bodrek 
+                  untuk membunuh mahasiswa yang cuma berteriak "LENGSERKAN 
+                  PRESIDEN TERBURUK INDONESIA".
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary mx-auto"
+                  style="width: 200px; display: block"
+                  >Gabung Diskusi</a
+                >
+            </div>
+          </div>
+          <div class="card" style="background-color: #5e6ec5;">
+            <div class="card-body">
+              <h5 class="card-title text-center" style="color: white;">Simpati Tengku Zafrul Jadi Mangsa Spekulasi</h5>
+              <img
+              class="mx-auto"
+              src="Frontend/Image/politik2.jpg"
+              alt="Card image cap"
+              style="width: 300px; display: block;
+              border-radius: 10px;"
+            />
+              <p class="card-text mt-3" style="color: white;">
+                Datuk Seri Mohamed Nazri Abdul Aziz melahirkan rasa simpati apabila 
+                spekulasi mula timbul berhubung kawasan yang akan ditandingi Menteri 
+                Kewangan, Tengku Datuk Seri Zafrul Tengku Abdul Aziz pada PRU15 nanti.
+                #GetaranMY | #Politik
 
-      <!-- tangapan -->
-      <div class="chat" style=" background-color: #ebebeb;">
-        <ul style="list-style:none;">
-          <li >
-            <div class="container" >
-              <img src="https://dosenit.com/wp-content/uploads/2021/02/136-1369892_avatar-people-person-business-user-man-character-avatar.png" alt="Avatar" style="width:100%;">
-              <p>Hai, bagaimana keadaanmu? sudah baik-baik saja?</p>
-              <span class="time-right">11:00</span>
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary mx-auto"
+                style="width: 200px; display: block"
+                >Gabung Diskusi</a
+              >
             </div>
-          </li>
-          <li>
-            <div class="container darker">
-              <img src="https://dosenit.com/wp-content/uploads/2021/02/images.png" alt="Avatar" class="right" style="width:100%;">
-              <p>yaa, sudah lebih baik sekarang</p>
-              <span class="time-left">11:01</span>
+          </div>
+          <div class="card" style="background-color: #5e6ec5;">
+            <div class="card-body">
+              <h5 class="card-title text-center" style="color: white;">Diakui atau Tidak, Indonesia Sedang Mengalami Populisme Politik</h5>
+              <img
+              class="mx-auto"
+              src="Frontend/Image/politik3.jpg"
+              alt="Card image cap"
+              style="width: 300px; display: block;
+              border-radius: 10px;"
+            />
+            <p class="card-text mt-3" style="color: white;">
+              Burhanuddin berharap Muhammadiyah memimpin di depan untuk terus 
+              menyuarakan moderasi meskipun pendapat itu tidak populer karena 
+              mayoritas masyarakat telah tercebur dalam doktrin populisme.
+              #Politik #Populisme #Muhammadiyah
+            </p>
+              <a
+                href="#"
+                class="btn btn-primary mx-auto"
+                style="width: 200px; display: block"
+                >Gabung Diskusi</a
+              >
             </div>
-          </li>
-          <li>
-            <div class="container">
-              <img src="https://dosenit.com/wp-content/uploads/2021/02/136-1369892_avatar-people-person-business-user-man-character-avatar.png" alt="Avatar" style="width:100%;">
-              <p>Oh! Baguslah, aku akan pergi ke rumahmu siang nanti, boleh kan?</p>
-              <span class="time-right">11:02</span>
-            </div>
-          </li>
-          <li>
-            <div class="container darker">
-              <img src="https://dosenit.com/wp-content/uploads/2021/02/images.png" alt="Avatar" class="right" style="width:100%;">
-              <p>iyaa, aku tunggu kedatanganmu ya</p>
-              <span class="time-left">11:05</span>
-            </div>
-          </li>
-          <li>
-            <div class="container darker">
+          </div>
+        </div>
+      </main>
 
-                <div class="row g-3">
-                <div class="col-12">
-                    <textarea class="form-control" placeholder="Ketik Tanggapan" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2"></label>
-                    <div class="col-1">
-                        <button type="button" class="btn btn-light">Kirim</button>
-                    </div>
-                  </div>
-
-                  </div>
-              </div>
-          </li>
-        </ul>
-      </div>
-   
         </body>
 </html>
