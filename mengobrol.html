@@ -28,10 +28,66 @@
         .navbar a{
             font-size: 36px;
         }
-     
-        .acount{
 
+        .sidebar {
+        margin-top: 0px;
+        padding: 0px;
+        width: 300px;
+        float: right;
+        background-color: #98d9ff;
+        position:relative;
+        height: 600px;
+        overflow: hidden; 
+        
         }
+
+        .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        }
+        
+        .sidebar a.active {
+        background-color: #174f6f;
+        color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+        background-color: #174f6f;
+        color: white;
+        }
+
+        .content {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 310px;
+        padding: 1px 160px;
+        height: auto;
+        background-color: #ffff;
+        }
+
+         @media screen and (max-width: 700px) {
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .sidebar p {
+            font-size: 29px;
+            text-align: center;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+        }
+
+        @media screen and (max-width: 400px) {
+        .sidebar a {
+            text-align: center;
+            float: none;
+        }
+        } 
+     
     </style>
 </head>
 <body>
@@ -39,7 +95,6 @@
         <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="" style=" margin-top: 15px; margin-left: 25px; margin-bottom: 15px;" >  
         <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/woman.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
         <input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
-      
     </div>
 
 
@@ -53,7 +108,25 @@
         </div>
       </nav>
      <div class="acount" style="background-color: #2694D2;">
-
      </div>
+
+          <!-- SideBar -->
+          <div class="sidebar" >
+            <p style="font-size: 29px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">Profil Pengguna</p>
+            <a  href="#" style="display:block; margin-left: 50px;"><img src="/Frontend/Image/man.png" width="150" style="border: 2px solid black; border-radius: 135px;" alt="User"></a>
+            <p style="font-size: 20px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">Yogha Scorhick</p>
+            <p style="font-size: 15px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">@skorchicky</p>
+        </div>
+
+        <div style="margin-top: 536px;">
+        <div class="row g-2 justify-content-center " style="background-color: #C4C4C4;">
+            <div class="col-auto " >
+            <textarea class="form-control" placeholder="Ketik Pesan..." id="floatingTextarea2" style="height: 30px; width: 800px; margin-bottom: 10px;"></textarea>
+            </div>
+            <div class="col-auto">
+             <button type="button" class="btn btn-link"><img src="/Frontend/Image/right-arrow.png" style="width:27px" alt=""></button>
+             </div>
+             </div>
+        </div>
 </body>
 </html>
