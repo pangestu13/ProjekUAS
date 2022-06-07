@@ -27,81 +27,90 @@
 </head>
 <body>
     <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="LogoDisPin">
-    <div class="navbar">
-        <p style="margin-left: 700px; font-size: 30px; color: white;">Registrasi</p>
+    <div class="navbar justify-content-center">
+        <p style="font-size: 30px; color: white;">Registrasi</p>
     </div>
 
-      <form style="margin-left: 100px; margin-top: 50px;">
-        <!-- Nama -->
-        <div class="mb-3" style="width: 400px;">
-          <label for="exampleInputEmail1" class="form-label">Masukaan Nama</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text"></div>
-        </div>
-        <!-- Email -->
-        <div class="mb-3" style="width: 400px;">
-            <label for="exampleInputEmail1" class="form-label">Masukaan E-Mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text"></div>
-          <!-- foto -->
-          <div class="mb-3" style="width: 400px;"></div>
-          <p>Masukkan Foto</p>
-          <form action="proses.php" method="post" enctype="multipart/form-data">
-            <p>Upload <input type='file' name='foto' /></p>
-      </form>
-      </div>
-      <!--Tempat Tanggal Lahir -->
-      <div class="mb-3" style="width: 400px; margin-left: 100px; margin-top: 50px;">
-        <label for="exampleInputEmail1" class="form-label">Tempat Tanggal Lahir</label>
-        <input type="email" class="form-control" id="floatingInput" placeholder="Tempat, Tanggal/Bulan/Tahun">
-      </div>
-      <!-- jenis kelamin -->
-      <div class="form-check" style="width: 400px; margin-left: 100px; margin-top: 50px;">
-        <p>Jenis Kelamin</p>
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Laki-Laki
-        </label>
-      </div>
-      <div class="form-check" style="width: 400px; margin-left: 100px;">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">
-          Perempuan
-        </label>
-      </div>
-      <!-- Pekerjaan -->
-      <select class="form-select" aria-label="Default select example" style="width: 400px; margin-left: 100px; margin-top: 50px;">
-        <p>Pekerjaan</p>
-        <option selected>Pilih Pekerjaan</option>
-        <option value="1">Mahasiswa</option>
-        <option value="2">Pelajar</option>
-        <option value="3">Pejabat</option>
-        <option value="3">Dosen/Pengajar</option>
-        <option value="3">Dokter/Perawat</option>
-        <option value="3">Wirausaha</option>
-        <option value="3">Politikus</option>
-        <option value="3">Arsitek</option>
-        <option value="3">Develover</option>
-        <option value="3">Karyawan</option>
-        <option value="3">Jaksa</option>
-      </select>
-      <!-- Username -->
-      <div class="mb-3" style="width: 400px; margin-left: 100px; margin-top: 50px;">
-        <label for="exampleInputEmail1" class="form-label">Username</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text"></div>
-      <!-- Password -->
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <!-- Konfirmasin Password -->
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
 
-        <button type="submit" class="btn btn-primary">Kirim</button>
-      </form>
+    <div class="row justify-content-center" style="margin-top: 45px; box-shadow: 2px 2px 2px rgba(0,0,0,0.8);">
+      <div class="card shadow-lg my-4 py-3" style="width: 700px; ">
+        <div class="card-body">
+            <div class="d-grid gap-2">
+              <form style="margin-top: 50px;">
+                <!-- Nama -->
+                <div class="mb-3" style="width: 400px;">
+                  <label for="exampleInputEmail1" class="form-label">Masukaan Nama</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+                <!-- Email -->
+                <div class="mb-3" style="width: 400px;">
+                    <label for="exampleInputEmail1" class="form-label">Masukaan E-Mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                  <!-- foto -->
+                  <div class="mb-3" style="width: 400px;"></div>
+                  <p>Masukkan Foto</p>
+                  <form action="proses.php" method="post" enctype="multipart/form-data">
+                    <p>Upload <input type='file' name='foto' /></p>
+              </form>
+              </div>
+              <!--Tempat Tanggal Lahir -->
+              <div class="mb-3" style="width: 400px; margin-top: 50px;">
+                <label for="exampleInputEmail1" class="form-label">Tempat Tanggal Lahir</label>
+                <input type="email" class="form-control" id="floatingInput" placeholder="Tempat, Tanggal/Bulan/Tahun">
+              </div>
+              <!-- jenis kelamin -->
+              <div class="form-check" style="width: 400px; margin-top: 50px;">
+                <p>Jenis Kelamin</p>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Laki-Laki
+                </label>
+              </div>
+              <div class="form-check" style="width: 400px;">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Perempuan
+                </label>
+              </div>
+              <!-- Pekerjaan -->
+              <select class="form-select" aria-label="Default select example" style="width: 400px; margin-top: 50px;">
+                <p>Pekerjaan</p>
+                <option selected>Pilih Pekerjaan</option>
+                <option value="1">Mahasiswa</option>
+                <option value="2">Pelajar</option>
+                <option value="3">Pejabat</option>
+                <option value="3">Dosen/Pengajar</option>
+                <option value="3">Dokter/Perawat</option>
+                <option value="3">Wirausaha</option>
+                <option value="3">Politikus</option>
+                <option value="3">Arsitek</option>
+                <option value="3">Develover</option>
+                <option value="3">Karyawan</option>
+                <option value="3">Jaksa</option>
+              </select>
+              <!-- Username -->
+              <div class="mb-3" style="width: 400px; margin-top: 50px;">
+                <label for="exampleInputEmail1" class="form-label">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+              <!-- Password -->
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <!-- Konfirmasin Password -->
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>
