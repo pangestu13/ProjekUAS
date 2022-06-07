@@ -52,41 +52,13 @@
             text-decoration: none;
             font-size:16px;
             border: 0px solid #2694D2;
-            padding: 25px;
+            padding: 10px;
         }
         .navbar ul li a:hover{
             background-color: #174f6f;
             color: black;
         }
         /* sidebar */
-        .sidebar {
-        margin-top: 0px;
-        padding: 0px;
-        width: 300px;
-        float: right;
-        background-color: #98d9ff;
-        position:relative;
-        height: 600px;
-        overflow: hidden; 
-        
-        }
-
-        .sidebar a {
-        display: block;
-        color: black;
-        padding: 16px;
-        text-decoration: none;
-        }
-        
-        .sidebar a.active {
-        background-color: #174f6f;
-        color: white;
-        }
-
-        .sidebar a:hover:not(.active) {
-        background-color: #174f6f;
-        color: white;
-        }
 
         .content {
         margin-top: 10px;
@@ -166,39 +138,44 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="" style=" margin-top: 15px; margin-left: 25px; margin-bottom: 15px;" >  
-        <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/woman.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
-        <form><input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
-      
-    </div>
 
-    <!-- <nav class="navbar navbar-light ">
-        <div class="container-fluid">
-            <ul>
-                <li><a href="#">Politik</a></li>
-                <li><a href="#">Pendidikan</a></li>
-                <li><a href="#">Olahraga</a></li>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">Entertaiment</a></li>
-                <li><a href="#">Food & Travel</a></li>
-            </ul>
-        </div>
-      </nav>
-     <div class="acount" style="background-color: #2694D2;">
-     </div> -->
+  <!-- Header -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/Frontend/Image/LogoDisPin.png" style="width: 100px;" alt="logo dispin"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 105px;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Politik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Pendidikan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Olahraga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Entertaiment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Food & Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Game</a>
+          </li>
 
-     <!-- SideBar -->
-     <div class="sidebar" >
-         <p style="font-size: 29px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">Kategori</p>
-        <a class="active" href="#home">Politik</a> 
-        <a href="#news">Pendidikan</a>
-        <a href="#contact">Olahraga</a>
-        <a href="#about">Entertaiment</a>
-        <a href="#about">Food & Travel</a>
-        <a href="#about">Game</a>
-        
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
+    </div>
+  </nav>
+
       
       <div class="content">
         <p style="text-align: center; font-size: 28px; background-color: #ffff;">Bapak Jokowi Takut Mundur</p>
