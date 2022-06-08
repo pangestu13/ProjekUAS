@@ -7,56 +7,79 @@
     <title>Profil</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <style>
-          
-        
         *{
             padding: 0;
             margin: 0;
             font-family: sans-serif;
         }
-         .header a{
-            float: right;
-            margin: 10px;
-         }
-          .header input{
-            float: right;
-            margin: 15px;
+        a:hover{
+          color: black;
         }
-        .navbaratas{
-            background-color: #2694D2;
-            margin-bottom: 0;
-        }
-        .navbaratas a{
-            font-size: 36px;
-        }
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="" style=" margin-top: 15px; margin-left: 25px; margin-bottom: 15px;" >  
-        <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/woman.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
-        <input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
-    </div>
+    <div class="row justify-content-center " style="margin-top: 45px;">
+        <div class="card" style="width: 1000px; background-color: #d8d9dd;">
+          <div class="card-body">
+              <div class="d-grid gap-2 justify-content-center">
+                <p class="card-title fw-bold fs-3">Profil Saya</p>
+                </div> 
+                <div class="text-center">
+                    <img src="/Frontend/Image/man.png" style="background-color: #e5ecff; width: 180px; border: 1px ; border-radius: 300px;" alt="foto Profil">
+                  </div>
+                  <div class="d-grid gap-2 justify-content-center">
+                    <p class="card-title fs-4">@skorchicky</p>
+                    </div>
+                  <center><a href="/Ubah_Foto.html" style="text-decoration: none; color:rgb(62, 68, 83); margin-left: auto; margin-right: auto;">
+                    <img src="/Frontend/Image/kamera.png" width="20px" alt="kamera" style="margin-bottom: 6px; opacity: 40%;"> Ubah Foto Profil</a></center>
 
+                  <div class="d-grid justify-content-center">
+                  <table width="100%" >
+                    <tbody><tr>
+                        <td valign="top">
+                        <table width="100%" height="200px" style="padding-left: 2px; padding-right: 13px;  margin-top: 15px;">
+                          <tbody>
+                            <tr>
+                              <td width="90%" valign="top" style="margin-top: 15px;" class="textt">Nama Lengkap</td>
+                                <td width="90px" >:</td>
+                                <td >Yogha Scorhick</td>
+                            </tr>
+                          <tr>
+                              <td class="textt" >Jenis Kelamin</td>
+                                <td>:</td>
+                                <td>Laki-Laki</td>
+                            </tr>
+                          <tr>
+                              <td class="textt">Email</td>
+                                <td>:</td>
+                                <td>skorchick13@gmail.com</td>
+                            </tr>
+                          <tr>
+                              <td class="textt">No.HP</td>
+                                <td>:</td>
+                                <td>0878-xxxx-xxxx</td>
+                            </tr>
+                          <tr>
+                              <td class="textt">Tanggal lahir</td>
+                                <td>:</td>
+                                <td>13-Nov-1998</td>
+                            </tr>
+                          <tr>
+                              <td valign="top" class="textt">Alamat</td>
+                                <td valign="top">:</td>
+                                <td>Jl. Seroja No. 55</td>
+                            </tr>
+                        </tbody></table>
+                        </td>
+                    </tr>
+                    </tbody></table></div>
 
-    <div class="navbaratas">
-    <center><img src="/Frontend/Image/man.png" width="180" style="border: 2px solid black; border-radius: 135px; margin-top: 10px;" alt="User">
-    <h2>Yogha Scorhick</h2>
-    <h3>@skorchicky</h3></center>
-
-<div style="background-color: #98d9ff; height: 500px; ">
-    <div class="row justify-content-center">
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Button</button>
-                <button class="btn btn-primary" type="button">Button</button>
-              </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="margin-top: 20px ;">
+                      <button class="btn btn-light me-md-2"  type="button"><img src="/Frontend/Image/settings.png" width="26px" alt=""> Pengaturan</button>
+                      <button class="btn btn-light me-md-2" type="button"><img src="/Frontend/Image/help-web-button.png" width="26px" alt=""> Bantuan</button>
+          </div>
         </div>
       </div>
-     </div>
-    </div>
-</div>
-
 </body>
 </html>
