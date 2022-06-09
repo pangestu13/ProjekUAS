@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!--font google  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mirza&display=swap" rel="stylesheet">
+
+   <!-- footer -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <style>
           
         
         *{
             padding: 0;
             margin: 0;
-            font-family: 'Mirza', cursive;
 
+        }
+
+        .header a{
+            float: right;
+         }
+        .navbar a{
+            font-size: 36px;
         }
         
         /*navbar */
@@ -28,18 +33,16 @@
         .navbar ul li{
             display: inline-block;
             margin-left: 30px;
-            margin-top: 0px;
         }
         .navbar ul li a{
-            color: white;
             text-decoration: none;
             font-size:16px;
-            border: 0px solid #2694D2;
-            padding: 10px;
+           
+            border-radius: 5px;
         }
         .navbar ul li a:hover{
-            background-color: #174f6f;
-            color: black;
+            background-color: #2da7ee;
+            color: rgb(255, 255, 255);
         }
         /* sidebar */
 
@@ -48,7 +51,7 @@
         margin-left: 10px;
         margin-right: 10px;
         height: auto;
-        background-color: #ffff;
+        background-color: rgb(255, 255, 255);
         }
 
          @media screen and (max-width: 700px) {
@@ -78,13 +81,8 @@
         background-color: #fff;
         border-radius: 5px;
         padding: 10px;
-        margin: 10px 200px;
-        width: 800px
-        }
-
-        .darker {
-        border-color: #ccc;
-        background-color: #fff;
+        margin-top: 20px;
+        width: 100%;;
         }
 
         .container::after {
@@ -112,11 +110,240 @@
         color: #aaa;
         }
 
-        .time-left {
-        float: left;
-        color: #999;
-        }
+        
 
+        /* footer */
+            footer{
+          position:relative;
+          background: #273440;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+        }
+        footer::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 100px;
+          height: 1px;
+          width: 100%;
+          background: #AFAFB6;
+        }
+        footer .content{
+          max-width: 1250px;
+          margin: auto;
+          padding: 30px 40px 40px 40px;
+          background-color: #273440;
+        }
+        footer .content .top{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 50px;
+        }
+        .content .top .logo-details{
+          color: #fff;
+          font-size: 30px;
+        }
+        .content .top .media-icons{
+          display: flex;
+        }
+        .content .top .media-icons a{
+          height: 40px;
+          width: 40px;
+          margin: 0 8px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          color: #fff;
+          font-size: 17px;
+          text-decoration: none;
+          transition: all 0.4s ease;
+        }
+        .top .media-icons a:nth-child(1){
+          background: #4267B2;
+        }
+        .top .media-icons a:nth-child(1):hover{
+          color: #4267B2;
+          background: #fff;
+        }
+        .top .media-icons a:nth-child(2){
+          background: #1DA1F2;
+        }
+        .top .media-icons a:nth-child(2):hover{
+          color: #1DA1F2;
+          background: #fff;
+        }
+        .top .media-icons a:nth-child(3){
+          background: #E1306C;
+        }
+        .top .media-icons a:nth-child(3):hover{
+          color: #E1306C;
+          background: #fff;
+        }
+        .top .media-icons a:nth-child(4){
+          background: #0077B5;
+        }
+        .top .media-icons a:nth-child(4):hover{
+          color: #0077B5;
+          background: #fff;
+        }
+        .top .media-icons a:nth-child(5){
+          background: #FF0000;
+        }
+        .top .media-icons a:nth-child(5):hover{
+          color: #FF0000;
+          background: #fff;
+        }
+        footer .content .link-boxes{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        footer .content .link-boxes .box{
+          width: calc(100% / 5 - 10px);
+        }
+        .content .link-boxes .box .link_name{
+          color: #fff;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          position: relative;
+        }
+        .link-boxes .box .link_name::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          height: 2px;
+          width: 35px;
+          background: #fff;
+        }
+        .content .link-boxes .box li{
+          margin: 6px 0;
+          list-style: none;
+        }
+        .content .link-boxes .box li a{
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          opacity: 0.8;
+          transition: all 0.4s ease
+        }
+        .content .link-boxes .box li a:hover{
+          opacity: 1;
+          text-decoration: underline;
+        }
+        .content .link-boxes .input-box{
+          margin-right: 55px;
+        }
+        .link-boxes .input-box input{
+          height: 40px;
+          width: calc(100% + 55px);
+          outline: none;
+          border: 2px solid #AFAFB6;
+          background: #060323;
+          border-radius: 4px;
+          padding: 0 15px;
+          font-size: 15px;
+          color: #fff;
+          margin-top: 5px;
+        }
+        .link-boxes .input-box input::placeholder{
+          color: #AFAFB6;
+          font-size: 16px;
+        }
+        .link-boxes .input-box input[type="button"]{
+          background: rgb(183, 193, 200);
+          color: #060323;
+          border: none;
+          font-size: 18px;
+          font-weight: 500;
+          margin: 4px 0;
+          opacity: 0.8;
+          cursor: pointer;
+          transition: all 0.4s ease;
+        }
+        .input-box input[type="button"]:hover{
+          opacity: 1;
+        }
+        footer .bottom-details{
+          width: 100%;
+          background: #060323;
+        }
+        footer .bottom-details .bottom_text{
+          max-width: 1250px;
+          margin: auto;
+          padding: 20px 40px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .bottom-details .bottom_text span,
+        .bottom-details .bottom_text a{
+          font-size: 14px;
+          font-weight: 300;
+          color: #fff;
+          opacity: 0.8;
+          text-decoration: none;
+        }
+        .bottom-details .bottom_text a:hover{
+          opacity: 1;
+          text-decoration: underline;
+        }
+        .bottom-details .bottom_text a{
+          margin-right: 10px;
+        }
+        @media (max-width: 900px) {
+          footer .content .link-boxes{
+            flex-wrap: wrap;
+          }
+          footer .content .link-boxes .input-box{
+            width: 40%;
+            margin-top: 10px;
+          }
+        }
+        @media (max-width: 700px){
+          footer{
+            position: relative;
+          }
+          .content .top .logo-details{
+            font-size: 26px;
+          }
+          .content .top .media-icons a{
+            height: 35px;
+            width: 35px;
+            font-size: 14px;
+            line-height: 35px;
+          }
+          footer .content .link-boxes .box{
+            width: calc(100% / 3 - 10px);
+          }
+          footer .content .link-boxes .input-box{
+            width: 60%;
+          }
+          .bottom-details .bottom_text span,
+          .bottom-details .bottom_text a{
+            font-size: 12px;
+          }
+        }
+        @media (max-width: 520px){
+          footer::before{
+            top: 145px;
+          }
+          footer .content .top{
+            flex-direction: column;
+          }
+          .content .top .media-icons{
+            margin-top: 16px;
+          }
+          footer .content .link-boxes .box{
+            width: calc(100% / 2 - 10px);
+          }
+          footer .content .link-boxes .input-box{
+            width: 100%;
+          }
+        }
     </style>
 </head>
 <body>
@@ -128,32 +355,33 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 105px;">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Politik</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Politik</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Pendidikan</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Pendidikan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Olahraga</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Olahraga</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Entertaiment</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Entertaiment</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Food & Travel</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Food & Travel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Game</a>
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Game</a>
           </li>
-
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        <div class="header"> <a  href="profil.html"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a></div>
+      </div>
       </div>
     </div>
   </nav>
@@ -161,8 +389,8 @@
       <div class="row justify-content-center">
         <div class="content col-sm-12 col-md-8 col-lg-8 align-self-center p-5">
           <p style="text-align: center; font-size: 28px; background-color: #ffff;">Bapak Jokowi Takut Mundur</p>
-          <div class="justify-content-center">  
-            <img style="display: block; margin-left: auto; margin-right: auto;" src="/Frontend/Image/politik.jpg" alt="">
+          <div class="justify-content-center">
+            <img src="/Frontend/Image/politik.jpg" class="img-fluid mx-auto d-block" alt="...">  
           </div>
           <p style="font-size: 16px; background-color: #ffff;">
             Bapak JokowidodoTakut MUNDUUUUR sampai siapin pasukan bodrek untuk membunuh mahasiswa 
@@ -179,20 +407,20 @@
 
       <!-- tangapan -->
       <div class="chat" style=" background-color: #ebebeb;">
-        <h2 style="margin-left:200px ;">Tanggapan</h2>
+        <h2 style="text-align: center;">Tanggapan</h2>
         <ul style="list-style:none;">
           <li >
             <div class="container" >
-              <img src="https://dosenit.com/wp-content/uploads/2021/02/136-1369892_avatar-people-person-business-user-man-character-avatar.png" alt="Avatar" style="width:100%;">
+              <img src="https://dosenit.com/wp-content/uploads/2021/02/136-1369892_avatar-people-person-business-user-man-character-avatar.png" alt="Avatar" style="width: 100%;">
               <p>Jokowi takut mundur sampai siapin pasukan bodrek untuk membunuh mahasiswa yang cuma berteriak "LENGSERKAN PRESIDEN TERBURUK INDONESIA".</p>
               <span class="time-right">11:00</span>
             </div>
           </li>
           <li>
-            <div class="container darker">
+            <div class="container">
               <img src="https://dosenit.com/wp-content/uploads/2021/02/images.png" alt="Avatar"  style="width:100%;">
               <p>Keputusan tersebut, mempertimbangkan hasil pengecekan lapangan dan laporan bahwa harga minyak goreng sudah mulai turun dan pasokan terus bertambah.</p>
-              <span class="time-left">11:01</span>
+              <span class="time-right">11:01</span>
             </div>
           </li>
           <li>
@@ -203,10 +431,10 @@
             </div>
           </li>
           <li>
-            <div class="container darker">
+            <div class="container ">
               <img src="https://dosenit.com/wp-content/uploads/2021/02/images.png" alt="Avatar"  style="width:100%;">
               <p>Sementara harga minyak goreng kemasan sederhana melonjak 25,41% dari Rp18.500 per liter pada 17 Maret 2022 menjadi Rp23.300 per liter pada 25 Mei 2022.</p>
-              <span class="time-left">11:05</span>
+              <span class="time-right">11:05</span>
             </div>
           </li>
           <li>
@@ -214,7 +442,7 @@
 
                 <div class="row g-3">
                 <div class="col-12">
-                    <textarea class="form-control" placeholder="Ketik Tanggapan" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Ketik Tanggapan" id="floatingTextarea2" style="height: 50px"></textarea>
                     <label for="floatingTextarea2"></label>
                     <div class="col-1">
                         <button type="button" class="btn btn-light">Kirim</button>
@@ -227,5 +455,58 @@
         </ul>
       </div>
    
+      <!-- footer -->
+      <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span class="logo_name">DisPin</span>
+            </div>
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Tentang Website</li>
+              <li><a href="#">Hak Cipta</a></li>
+              <li><a href="#">Privasi</a></li>
+              <li><a href="#">Kebijakan</a></li>
+              <li><a href="#">Tentang</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Bantuan</li>
+              <li><a href="#">Pusat Bantuan</a></li>
+              <li><a href="#">Pusat Keamanan</a></li>
+              <li><a href="#">Privacy Police</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Account</li>
+              <li><a href="profil.html">Profile</a></li>
+              <li><a href="http://127.0.0.1:5500/login.html">My account</a></li>
+            </ul>
+  
+            <ul class="box input-box">
+              <li class="link_name">Cari Diskusi</li>
+              <li><input type="text" placeholder="Ketik..."></li>
+              <li><input type="button" value="Cari"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2022 <a href="#">DisPin.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Disclaimer</a>
+            </span>
+          </div>
+        </div>
+      </footer>
     </body>
 </html>

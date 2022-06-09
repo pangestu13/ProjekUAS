@@ -19,7 +19,7 @@
             font-size: 36px;
         }
         .row{
-            margin: 20px 70px;
+            margin: auto;
         }
         .buttton ul li{
             display: block;
@@ -33,41 +33,46 @@
     <nav class="navbar navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand " href="#" style="color: #fff; margin-left: 75px;">
-            <img src="Frontend/Image/user (1).png" alt="" width="40" class="d-inline-block align-text-top">
+            <img src="/Frontend/Image/kamera.png" alt="" width="45" class="d-inline-block align-text-top">
             Ubah Foto Profil</a>
           <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
         </div>
         </nav>
 
         <!-- body -->
-        <div class="row">
-        <div class="col-sm-2">
-          <div class="card">
-                <img src="/Frontend/Image/man.png" width="170px" alt="">
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="card">
-            <div class="card-body">
-             <img src="/Frontend/Image/girl.png" width="170px" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card">
-              <div class="card-body">
-                <img src="/Frontend/Image/woman.png" width="170px" alt="">
-              </div>
-            </div>
-          </div>
-      </div>
 
-      <div class="buttton">
-          <ul style="font-size: 25px;">
-              <li><li><button type="button" style="font-size: 25px; color: black;" class="btn btn-secondary">Upload Gambar</button></li></li>
-              <li><li><button type="button" style="font-size: 25px; color: black;" class="btn btn-secondary">Pilih Gambar</button></li></li>
-              <li><li><button type="button" style="font-size: 25px; color: black;" class="btn btn-secondary">Ok</button></li></li>
-          </ul>
-      </div>
+        <div class="row justify-content-center" style="margin-top: 45px; ;">
+          <div class="card shadow-lg my-4 py-3" style="width: 700px; ">
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                  <center><h2>Pilih Foto</h2></center>
+                  <div class="row justify-content-center">
+                    <div class="col-sm-auto">
+                      <div class="card">
+                        <div class="card-body">
+                         <img src="/Frontend/Image/girl.png" width="170px" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-auto">
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="/Frontend/Image/man.png" width="170px" alt="">
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            
+                  <div class="buttton">
+                      <ul style="font-size: 25px;">
+                          <li><li><button type="button" style="font-size: 25px; color: black; background-color: #dedede;" class="btn">Upload Foto</button></li></li>
+                         <center><li><li><button type="button" style="font-size: 25px; color: rgb(255, 255, 255);" class="btn btn-primary">Selesai</button></li></li></center> 
+                      </ul>
+                  </div>
+
+            </div>
+          </div>
+        </div></div>
+
 </body>
 </html>

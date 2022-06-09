@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <style>
         *{
@@ -12,13 +13,112 @@
             margin: 0;
             font-family: sans-serif;
         }
-        a:hover{
-          color: black;
+                /*navbar */
+                .navbar{
+            background-color: #2694D2;
         }
+
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size:16px;
+           
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover{
+            background-color: #2da7ee;
+            color: rgb(255, 255, 255);
+        }
+
+               /* footer */
+       @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        section {
+    padding: 60px 0;
+    }
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        text-transform: uppercase;
+    }
+    
+    /* footer */
+      footer{
+      margin-top:200px;
+      width: 100%;
+    }
+    footer .bottom-details{
+      width: 100%;
+      background: #060323;
+    }
+    footer .bottom-details .bottom_text{
+      max-width: 1250px;
+      margin: auto;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a{
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      opacity: 0.8;
+      text-decoration: none;
+    }
+    .bottom-details .bottom_text a:hover{
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .bottom-details .bottom_text a{
+      margin-right: 10px;
+    }
+      .bottom-details .bottom_text span,
+      .bottom-details .bottom_text a{
+        font-size: 12px;
+      }
 
     </style>
 </head>
 <body>
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Beranda_login.html"><img src="/Frontend/Image/LogoDisPin.png" style="width: 150px;" alt="logo dispin"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 105px;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Politik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Pendidikan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Olahraga</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Entertaiment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Food & Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Game</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
     <div class="row justify-content-center " style="margin-top: 45px;">
         <div class="card" style="width: 1000px; background-color: #d8d9dd;">
           <div class="card-body">
@@ -75,11 +175,24 @@
                     </tr>
                     </tbody></table></div>
 
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="margin-top: 20px ;">
-                      <button class="btn btn-light me-md-2"  type="button"><img src="/Frontend/Image/settings.png" width="26px" alt=""> Pengaturan</button>
-                      <button class="btn btn-light me-md-2" type="button"><img src="/Frontend/Image/help-web-button.png" width="26px" alt=""> Bantuan</button>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="margin-top: 20px; ">
+                      <a href="/pengaturan.html"><button class="btn btn-light me-md-2"  type="button"><img src="/Frontend/Image/settings.png" width="26px" alt="pengaturan"> Pengaturan</button></a>
+                      <a href="/Bantuan.html"><button class="btn btn-light me-md-2" type="button"><img src="/Frontend/Image/help-web-button.png" width="26px" alt=""> Bantuan</button></a>
           </div>
         </div>
       </div>
+
+      <!-- footer -->
+      <footer style="margin-top: 50px;">
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2022 <a href="#">DisPin.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Disclaimer</a>
+            </span>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

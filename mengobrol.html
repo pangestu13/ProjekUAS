@@ -18,13 +18,6 @@
             float: right;
             margin: 10px;
          }
-          .header input{
-            float: right;
-            margin: 15px;
-        }
-        .navbar{
-            background-color: #2694D2;
-        }
         .navbar a{
             font-size: 36px;
         }
@@ -34,9 +27,9 @@
         padding: 0px;
         width: 300px;
         float: right;
-        background-color: #98d9ff;
+        background-color: #a3a6b9;
         position:relative;
-        height: 600px;
+        height: 585px;
         overflow: hidden; 
         
         }
@@ -46,16 +39,6 @@
         color: black;
         padding: 16px;
         text-decoration: none;
-        }
-        
-        .sidebar a.active {
-        background-color: #174f6f;
-        color: white;
-        }
-
-        .sidebar a:hover:not(.active) {
-        background-color: #174f6f;
-        color: white;
         }
 
         .content {
@@ -77,7 +60,7 @@
             font-size: 29px;
             text-align: center;
         }
-        .sidebar a {float: left;}
+        .sidebar a {float: center; width: 100%; height: auto;}
         div.content {margin-left: 0;}
         }
 
@@ -87,51 +70,144 @@
             float: none;
         }
         } 
+        /* navbar */
+        .navbar{
+            background-color: #2694D2;
+        }
+
+        .navbar ul li{
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            font-size:16px;
+           
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover{
+            background-color: #2da7ee;
+            color: rgb(255, 255, 255);
+        }
+        /* footer */
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        section {
+    padding: 60px 0;
+    }
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        text-transform: uppercase;
+    }
+    
+    /* footer */
+      footer{
+      margin-top:200px;
+      width: 100%;
+    }
+    footer .bottom-details{
+      width: 100%;
+      background: #060323;
+    }
+    footer .bottom-details .bottom_text{
+      max-width: 1250px;
+      margin: auto;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a{
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      opacity: 0.8;
+      text-decoration: none;
+    }
+    .bottom-details .bottom_text a:hover{
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .bottom-details .bottom_text a{
+      margin-right: 10px;
+    }
+      .bottom-details .bottom_text span,
+      .bottom-details .bottom_text a{
+        font-size: 12px;
+      }
      
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-
-    
-
-    <div class="header">
-        <img src="/Frontend/Image/LogoDisPin.png" width="100px" alt="" style=" margin-top: 15px; margin-left: 25px; margin-bottom: 15px;" >  
-        <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/woman.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
-        <input class="search" type="search"   placeholder="Search..."><input class="button" type="submit" value="Cari"></form>
-    </div>
-
-
-    <nav class="navbar navbar-light ">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#" style="color: #fff; margin-left: 75px;">
-            <img src="Frontend/Image/settings.png" alt="" width="40" class="d-inline-block align-text-top">
-            Obrolan
-          </a>
-          <a  href="#" style="margin-right: 35px;"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a>
+          <a class="navbar-brand" href="#"><img src="/Frontend/Image/LogoDisPin.png" style="width: 100px;" alt="logo dispin"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 105px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Politik</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Olahraga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Entertaiment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Food & Travel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Game</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="header"> <a  href="#"><img src="/Frontend/Image/man.png" width="50" style="border: 2px solid black; border-radius: 35px;" alt="User"></a></div>
+          </div>
         </div>
       </nav>
-     <div class="acount" style="background-color: #2694D2;">
-     </div>
-
+    
           <!-- SideBar -->
-          <div class="sidebar" >
+          <div class="sidebar justify-content-center" >
             <p style="font-size: 29px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">Profil Pengguna</p>
-            <a  href="#" style="display:block; margin-left: 50px;"><img src="/Frontend/Image/man.png" width="150" style="border: 2px solid black; border-radius: 135px;" alt="User"></a>
+            <center><a  href="#" style="display:block;"><img src="/Frontend/Image/man.png" width="150" style="border: 2px solid black; border-radius: 135px;" alt="User"></a></center>
             <p style="font-size: 20px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">Yogha Scorhick</p>
             <p style="font-size: 15px; text-align: center; font-family:'Times New Roman', Times, serif; font-style:inherit; margin-top: 8px;">@skorchicky</p>
         </div>
 
         <div style="margin-top: 536px;">
         <div class="row g-2 justify-content-center " style="background-color: #C4C4C4;">
-            <div class="col-auto " >
-            <textarea class="form-control" placeholder="Ketik Pesan..." id="floatingTextarea2" style="height: 30px; width: 800px; margin-bottom: 10px;"></textarea>
+            <div class="col-10 " >
+            <textarea class="form-control" placeholder="Ketik Pesan..." id="floatingTextarea2" style="height: 30px; margin-bottom: 10px;"></textarea>
             </div>
             <div class="col-auto">
              <button type="button" class="btn btn-link"><img src="/Frontend/Image/right-arrow.png" style="width:27px" alt=""></button>
              </div>
              </div>
         </div>
+
+        <!-- footer -->
+        <footer style="margin-top: 1px;">
+            <div class="bottom-details">
+              <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2022 <a href="#">DisPin.</a>All rights reserved</span>
+                <span class="policy_terms">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Disclaimer</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+        
 </body>
 </html>
